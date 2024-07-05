@@ -9,3 +9,14 @@
     - adrian
     - ali
     - ghassan
+
+- id: l2cl2r
+  title: "Learning-to-Count by Learning-to-Rank"
+  venue: CVR, 2023
+  description: "Reducing the annotation burden for object counting by leveraging ranking supervision."
+  project_page: https://ieeexplore.ieee.org/abstract/document/10229913
+  image: demo_img_1.png
+  authors:
+    - adrian
+    - ali
+    - ghassan
