@@ -23,7 +23,7 @@ name: Adriano D'Alessandro
 position: PhD Student 
 email: adrian.c.dalessandro@gmail.com
 description: >-
-  I am a researcher dedicated to solving object counting challenges in computer vision using latent diffusion models, with a particular focus on scenarios involving limited data.
+  I am a researcher dedicated to solving object counting challenges in computer vision using latent diffusion models, with a particular focus on scenarios involving limited data. I have previously focused on artificial intelligence and plant agriculture, and I am passionate about food systems.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://adrian-dalessandro.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: KeunhongP
