@@ -4,7 +4,7 @@
   description: "Utilizing latent diffusion models for annotation-free object counting across diverse categories."
   project_page: https://adrian-dalessandro.github.io/afreeca.io/
   arxiv: 2403.04943
-  image: demo_img_1.png
+  image: afreeca_demo.png
   authors:
     - adrian
     - ali
