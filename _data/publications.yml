@@ -20,3 +20,25 @@
     - adrian
     - ali
     - ghassan
+  
+- id: human_impact
+  title: "The human impact of data bias and the digital agricultural revolution"
+  venue: Handbook on the human impact of agriculture, Edward Elgar Publishing
+  description: "A analysis of big datasets and the ‘intelligent’ machines which use them in decision support systems for farmers."
+  project_page: https://www.elgaronline.com/edcollchap/edcoll/9781839101731/9781839101731.00017.xml
+  image: demo_img_1.png
+  authors:
+    - kelly
+    - rotz
+    - adrian
+
+- id: name2vec
+  title: "Name2vec: Personal names embeddings"
+  venue: CCAI, 2019
+  description: "Creating name-embeddings for record linkage and document retrieval using Doc2Vec"
+  project_page: https://github.com/foxcroftjn/CanAI-Name2Vec
+  image: demo_img_1.png
+  authors:
+    - jeremy
+    - adrian
+    - luiza
