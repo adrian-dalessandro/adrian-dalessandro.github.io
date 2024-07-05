@@ -14,7 +14,8 @@
   title: "Learning-to-Count by Learning-to-Rank"
   venue: CVR, 2023
   description: "Reducing the annotation burden for object counting by leveraging ranking supervision."
-  project_page: https://ieeexplore.ieee.org/abstract/document/10229913
+  project_page: https://github.com/sfu-mial/Rank2Count
+  full_text: https://ieeexplore.ieee.org/abstract/document/10229913
   image: demo_img_1.png
   authors:
     - adrian
@@ -25,7 +26,7 @@
   title: "The human impact of data bias and the digital agricultural revolution"
   venue: Handbook on the human impact of agriculture, Edward Elgar Publishing, 2021"
   description: "A analysis of big datasets and the ‘intelligent’ machines which use them in decision support systems for farmers."
-  project_page: https://www.elgaronline.com/edcollchap/edcoll/9781839101731/9781839101731.00017.xml
+  full_text: https://www.elgaronline.com/edcollchap/edcoll/9781839101731/9781839101731.00017.xml
   image: demo_img_1.png
   authors:
     - kelly
@@ -36,6 +37,7 @@
   title: "Name2vec: Personal names embeddings"
   venue: CCAI, 2019
   description: "Creating name-embeddings for record linkage and document retrieval using Doc2Vec"
+  full_text: https://link.springer.com/chapter/10.1007/978-3-030-18305-9_52
   project_page: https://github.com/foxcroftjn/CanAI-Name2Vec
   image: demo_img_1.png
   authors:
