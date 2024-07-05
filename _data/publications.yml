@@ -16,7 +16,7 @@
   description: "Reducing the annotation burden for object counting by leveraging ranking supervision."
   project_page: https://github.com/sfu-mial/Rank2Count
   full_text: https://ieeexplore.ieee.org/abstract/document/10229913
-  image: demo_img_1.png
+  image: l2r_demo.png
   authors:
     - adrian
     - ali
