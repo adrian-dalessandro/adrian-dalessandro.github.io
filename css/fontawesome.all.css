@@ -1833,8 +1833,11 @@ readers do not read off random characters that represent icons */
 .fa-git-square:before {
   content: "\f1d2"; }
 
+.fa-bluesky:before {
+  content: "\e001"; }
+
 .fa-github:before {
-  content: "\f09b"; }
+    content: "\f09b"; }
 
 .fa-github-alt:before {
   content: "\f113"; }
