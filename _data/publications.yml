@@ -2,7 +2,7 @@
   title: "AFreeCA: Annotation-Free Counting for All"
   venue: ECCV, 2024
   description: "Utilizing latent diffusion models for annotation-free object counting across diverse categories."
-  project_page: https://adrian-dalessandro.github.io/afreeca.io/
+  project_page: https://dalessandro.dev/afreeca.io/
   arxiv: 2403.04943
   image: afreeca_demo.png
   authors:
