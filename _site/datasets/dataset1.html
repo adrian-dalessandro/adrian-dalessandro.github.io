@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Adriano D'Alessandro</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="/css/fontawesome.all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
+  <link href="/css/bulma.min.css" rel="stylesheet">
+  <link href="/css/index.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script defer src="/js/fontawesome.all.min.js"></script>
+  <script src="/js/index.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const navbarBurgers = Array.from(document.querySelectorAll(".navbar-burger"));
+      navbarBurgers.forEach((burger) => {
+        burger.addEventListener("click", () => {
+          const target = document.querySelector(".navbar-menu");
+          burger.classList.toggle("is-active");
+          target.classList.toggle("is-active");
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="/">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+          <span>Home</span>
+        </a>
+        <a class="navbar-item" href="/resume.html">
+          <span class="icon">
+            <i class="fas fa-file-alt"></i>
+          </span>
+          <span>Resume</span>
+        </a>
+        <a class="navbar-item" href="/blog/">
+          <span class="icon"><i class="fas fa-pencil-alt"></i></span>
+          <span>Blog</span>
+        </a>
+        <a class="navbar-item" href="/datasets/">
+          <span class="icon"><i class="fas fa-database"></i>
+          </span>
+          <span>Datasets</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+<!-- End nav bar -->
+<main>
+    blog post!
+
+
+</main>
+<!-- Start footer section -->
+<footer class="footer">
+    <div class="container">
+      <div class="content footer-links has-text-centered">
+        <a href="mailto:adrian.c.dalessandro@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a class="external-link" href="https://github.com/adrian-dalessandro">
+          <i class="fab fa-github"></i>
+        </a>
+        <a class="external-link" href="https://scholar.google.com/citations?user=FvPiYsEAAAAJ">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+        <a class="external-link" href="https://bsky.app/profile/adrian-dalessandro.bsky.social">
+          <i class="fab fa-bluesky"></i>
+        </a>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              Adapted from <a href="https://github.com/keunhong/keunhong.github.io">this template</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

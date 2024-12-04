@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Adriano D'Alessandro</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="/css/fontawesome.all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
+  <link href="/css/bulma.min.css" rel="stylesheet">
+  <link href="/css/index.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script defer src="/js/fontawesome.all.min.js"></script>
+  <script src="/js/index.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const navbarBurgers = Array.from(document.querySelectorAll(".navbar-burger"));
+      navbarBurgers.forEach((burger) => {
+        burger.addEventListener("click", () => {
+          const target = document.querySelector(".navbar-menu");
+          burger.classList.toggle("is-active");
+          target.classList.toggle("is-active");
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="/">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+          <span>Home</span>
+        </a>
+        <a class="navbar-item" href="/resume.html">
+          <span class="icon">
+            <i class="fas fa-file-alt"></i>
+          </span>
+          <span>Resume</span>
+        </a>
+        <a class="navbar-item" href="/blog/">
+          <span class="icon"><i class="fas fa-pencil-alt"></i></span>
+          <span>Blog</span>
+        </a>
+        <a class="navbar-item" href="/datasets/">
+          <span class="icon"><i class="fas fa-database"></i>
+          </span>
+          <span>Datasets</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+<!-- End nav bar -->
+<main>
+      <section class="hero">
+    <div class="hero-body container is-max-desktop">
+      <div class="columns is-vcentered">
+
+        <div class="column is-4">
+          <div class="portrait">
+            <img src="/images/portrait.jpg" />
+          </div>
+        </div>
+
+        <div class="column">
+          <h1 class="title is-3">
+            <b>Adriano D'Alessandro</b>
+          </h1>
+          <h4 class="subtitle is-5">
+           PhD Candidate (Computer Science)
+          </h4>
+          <div class="content has-text-justified">
+            <p>I’m a computer vision researcher and PhD candidate living in Vancouver. My work focuses on object counting with limited data, and lately, I’ve been diving into using synthetic data from latent diffusion models to train counting models. I’m also into things like plant agriculture and biodiversity—basically, anywhere counting and nature intersect in interesting ways.</p>
+
+            <div class="buttons">
+              <!-- <a class="external-link button is-light" href="cv.html">
+                <span class="icon"><i class="fas fa-file"></i></span>
+                <span>CV</span>
+              </a> -->
+
+              <a class="external-link button is-light"
+                href="https://scholar.google.com/citations?user=FvPiYsEAAAAJ">
+                <span class="icon"><i class="ai ai-google-scholar"></i></span>
+                <span>Scholar</span>
+              </a>
+
+              <a class="external-link button is-light" href="https://github.com/adrian-dalessandro">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                <span>Github</span>
+              </a>
+
+              <a class="external-link button is-light" href="https://bsky.app/profile/adrian-dalessandro.bsky.social">
+                <span class="icon"><i class="fab fa-bluesky"></i></span>
+                <span>Bluesky</span>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <h2 class="title is-3">Publications</h2>
+
+      
+      <div class="publication-block columns">
+
+        <div class="column is-2">
+          <div class="publication-image ">
+            
+            <img alt="AFreeCA: Annotation-Free Counting for All" src="./images/afreeca_demo.png" />
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <h3 class="publication-title"><a href="https://dalessandro.dev/afreeca.io/">AFreeCA: Annotation-Free Counting for All</a></h3>
+            <div class="publication-authors">
+              
+              
+              <span class="author-block author-me">
+                
+                Adriano  D'Alessandro,
+                
+              </span>
+              
+              
+              <span class="author-block ">
+                
+                <a href="https://arash-mham.github.io/">Ali  Mahdavi-Amiri</a>,
+                
+              </span>
+              
+              
+              <span class="author-block ">
+                
+                <a href="https://www.medicalimageanalysis.com/ghassans-bio">Ghassan  Hamarneh</a>
+                
+              </span>
+              
+            </div>
+            <div class="publication-venue">
+              <span>ECCV 2024</span>
+              
+            </div>
+            <p class="publication-description">Utilizing latent diffusion models for annotation-free object counting across diverse categories.</p>
+            <!-- Publication Links. -->
+            
+            <div class="publication-links buttons field has-addons">
+              
+              <a class="external-link button is-small is-ghost" href="https://dalessandro.dev/afreeca.io/">
+                <span class="icon"><i class="fas fa-globe-asia"></i></span>
+                <span>Project Page</span>
+              </a>
+              
+              
+              
+              <a class="external-link button is-small is-ghost" href="https://arxiv.org/pdf/2403.04943.pdf">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <span>PDF</span>
+              </a>
+              
+              <a class="external-link button is-small is-ghost" href="https://arxiv.org/abs/2403.04943">
+                <span class="icon"><i class="ai ai-arxiv"></i></span>
+                <span>arXiv</span>
+              </a>
+              
+              
+            </div>
+            <!--/ Publication Links. -->
+          </div>
+        </div>
+      </div>
+      
+      <div class="publication-block columns">
+
+        <div class="column is-2">
+          <div class="publication-image ">
+            
+            <img alt="Learning-to-Count by Learning-to-Rank" src="./images/l2r_demo.png" />
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <h3 class="publication-title"><a href="https://github.com/sfu-mial/Rank2Count">Learning-to-Count by Learning-to-Rank</a></h3>
+            <div class="publication-authors">
+              
+              
+              <span class="author-block author-me">
+                
+                Adriano  D'Alessandro,
+                
+              </span>
+              
+              
+              <span class="author-block ">
+                
+                <a href="https://arash-mham.github.io/">Ali  Mahdavi-Amiri</a>,
+                
+              </span>
+              
+              
+              <span class="author-block ">
+                
+                <a href="https://www.medicalimageanalysis.com/ghassans-bio">Ghassan  Hamarneh</a>
+                
+              </span>
+              
+            </div>
+            <div class="publication-venue">
+              <span>CVR 2023</span>
+              
+            </div>
+            <p class="publication-description">Reducing the annotation burden for object counting by leveraging ranking supervision.</p>
+            <!-- Publication Links. -->
+            
+            <div class="publication-links buttons field has-addons">
+              
+              <a class="external-link button is-small is-ghost" href="https://github.com/sfu-mial/Rank2Count">
+                <span class="icon"><i class="fas fa-globe-asia"></i></span>
+                <span>Project Page</span>
+              </a>
+              
+              
+              <a class="external-link button is-small is-ghost" href="https://ieeexplore.ieee.org/abstract/document/10229913">
+                <span class="icon"><i class="fas fa-file-alt"></i></span>
+                <span>Full Text</span>
+              </a>
+              
+              
+              
+            </div>
+            <!--/ Publication Links. -->
+          </div>
+        </div>
+      </div>
+      
+      <div class="publication-block columns">
+
+        <div class="column is-2">
+          <div class="publication-image ">
+            
+            <img alt="The human impact of data bias and the digital agricultural revolution" src="./images/agriculture_demo.png" />
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <h3 class="publication-title"><a href="">The human impact of data bias and the digital agricultural revolution</a></h3>
+            <div class="publication-authors">
+              
+              
+              <span class="author-block ">
+                
+                <a href="https://www.uottawa.ca/research-innovation/centre-law-technology-society/people/bronson-kelly">Kelly  Bronson</a>,
+                
+              </span>
+              
+              
+              <span class="author-block ">
+                
+                <a href="https://sarahrotz.com/">Sarah  Rotz</a>,
+                
+              </span>
+              
+              
+              <span class="author-block author-me">
+                
+                Adriano  D'Alessandro
+                
+              </span>
+              
+            </div>
+            <div class="publication-venue">
+              <span>Handbook on the human impact of agriculture, Edward Elgar Publishing 2021</span>
+              
+            </div>
+            <p class="publication-description">A analysis of big datasets and the ‘intelligent’ machines which use them in decision support systems for farmers.</p>
+            <!-- Publication Links. -->
+            
+            <div class="publication-links buttons field has-addons">
+              
+              
+              <a class="external-link button is-small is-ghost" href="https://www.elgaronline.com/edcollchap/edcoll/9781839101731/9781839101731.00017.xml">
+                <span class="icon"><i class="fas fa-file-alt"></i></span>
+                <span>Full Text</span>
+              </a>
+              
+              
+              
+            </div>
+            <!--/ Publication Links. -->
+          </div>
+        </div>
+      </div>
+      
+      <div class="publication-block columns">
+
+        <div class="column is-2">
+          <div class="publication-image ">
+            
+            <img alt="Name2vec: Personal names embeddings" src="./images/name2vec.png" />
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <h3 class="publication-title"><a href="https://github.com/foxcroftjn/CanAI-Name2Vec">Name2vec: Personal names embeddings</a></h3>
+            <div class="publication-authors">
+              
+              
+              <span class="author-block ">
+                
+                <a href="https://github.com/foxcroftjn">Jeremy  Foxcroft</a>,
+                
+              </span>
+              
+              
+              <span class="author-block author-me">
+                
+                Adriano  D'Alessandro,
+                
+              </span>
+              
+              
+              <span class="author-block ">
+                
+                <a href="https://www.uoguelph.ca/computing/people/luiza-antonie">Luiza  Antonie</a>
+                
+              </span>
+              
+            </div>
+            <div class="publication-venue">
+              <span>CCAI 2019</span>
+              
+            </div>
+            <p class="publication-description">Creating name-embeddings for record linkage and document retrieval using Doc2Vec</p>
+            <!-- Publication Links. -->
+            
+            <div class="publication-links buttons field has-addons">
+              
+              <a class="external-link button is-small is-ghost" href="https://github.com/foxcroftjn/CanAI-Name2Vec">
+                <span class="icon"><i class="fas fa-globe-asia"></i></span>
+                <span>Project Page</span>
+              </a>
+              
+              
+              <a class="external-link button is-small is-ghost" href="https://link.springer.com/chapter/10.1007/978-3-030-18305-9_52">
+                <span class="icon"><i class="fas fa-file-alt"></i></span>
+                <span>Full Text</span>
+              </a>
+              
+              
+              
+            </div>
+            <!--/ Publication Links. -->
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+
+
+</main>
+<!-- Start footer section -->
+<footer class="footer">
+    <div class="container">
+      <div class="content footer-links has-text-centered">
+        <a href="mailto:adrian.c.dalessandro@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a class="external-link" href="https://github.com/adrian-dalessandro">
+          <i class="fab fa-github"></i>
+        </a>
+        <a class="external-link" href="https://scholar.google.com/citations?user=FvPiYsEAAAAJ">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+        <a class="external-link" href="https://bsky.app/profile/adrian-dalessandro.bsky.social">
+          <i class="fab fa-bluesky"></i>
+        </a>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              Adapted from <a href="https://github.com/keunhong/keunhong.github.io">this template</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+---
+layout: default
+title: Resume
+---
+<section class="section shrink-gap">
+  <div class="container"> 
+    <div class="notification is-primary">
+      <button class="delete"></button>
+      <strong>Note:</strong> I am currently seeking out research roles within academia or industry. 
+      If my profile fits your requirements, please feel free to reach out to me.
+    </div>
+  </div>
+</section>
+
+<!-- Intro Section -->
+<section class="section shrink-gap">
+  <div class="container">
+    <div class="box">
+      <div class="columns is-vcentered">
+        <!-- Image Column -->
+        <div class="column is-one-quarter has-text-centered">
+          <figure class="image is-256x256 is-inline-block">
+            <img class="is-rounded" src="{{ '/images/profile2.png' | relative_url }}" alt="Photo of {{ site.author }}">
+          </figure>
+        </div>
+        <!-- Title and Social Media Column -->
+        <div class="column">
+          <h1 class="title">{{ site.data.resume.name }}</h1>
+          <h2 class="subtitle">{{ site.data.resume.title }}</h2>
+          <div class="buttons">
+            <a href="mailto:{{ site.email }}" class="button is-link is-small">
+              <span class="icon"><i class="fas fa-envelope"></i></span>
+              <span>Email</span>
+            </a>
+            <a href="https://github.com/{{ site.github_username }}" class="button is-link is-small">
+              <span class="icon"><i class="fab fa-github"></i></span>
+              <span>GitHub</span>
+            </a>
+            <a href="https://bsky.app/profile/{{ site.bsky_username }}" class="button is-link is-small">
+              <span class="icon"><i class="fab fa-bluesky"></i></span>
+              <span>Bluesky</span>
+            </a>
+            <a href="https://scholar.google.com/citations?user={{ site.google_scholar }}" class="button is-link is-small">
+              <span class="icon"><i class="ai ai-google-scholar"></i></span>
+              <span>Google Scholar</span>
+            </a>
+            <p>{{ site.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Education Section -->
+<section class="section shrink-gap">
+  <div class="container">
+    <h2 class="title">Education</h2>
+    <div class="box">
+      {% assign education_section = site.data.resume.sections | where: "name", "Education" %}
+      {% for item in education_section.first.items %}
+      <div class="columns is-gapless">
+        <div class="column is-three-quarters">
+         <strong>{{item.degree}} {{item.type}} </strong>  | <span class="has-text-grey no-wrap">{{item.institution}}</span>
+        </div>
+        <div class="column is-one-quarters">
+          {{item.date}}
+        </div>
+      </div>
+        
+      {% endfor %}
+  </div>
+</section>
+
+<!-- Publications Section -->
+<section class="section shrink-gap">
+  <div class="container">
+    <h2 class="title">Publications & Book Chapters</h2>
+    <div class="box">
+      {% for publication in site.data.publications %}
+
+      <div class="columns is-gapless">
+        <div class="column is-three-quarters">
+         <span class="has-background-light"><strong>{{publication.title}} </strong> </span>| <small><span class="has-text-grey">{{publication.venue}}</span></small>
+         <p><small><strong>Authors: </strong>
+         {% for author_id in publication.authors %}
+              {% assign author = site.data.authors[author_id] %}
+                {{ author.first_name }} {{author.middle_name}} {{ author.last_name }}{% if forloop.last == false %},{%
+                endif %}
+          {% endfor %}
+        </small>
+        </p>
+        <p>
+          <small>{{publication.description}}</small>
+        </p>
+        </div>
+        <div class="column is-one-quarter">
+          {{publication.year}}
+        </div>
+      </div>
+        
+      {% endfor %}
+  </div>
+</section>
+
+<!-- Work Experience -->
+<section class="section shrink-gap">
+  <div class="container">
+    <h2 class="title">Work Experience</h2>
+    <div class="box">
+      {% assign work_section = site.data.resume.sections | where: "name", "Work" %}
+      {% for item in work_section.first.items %}
+      <div class="columns is-gapless">
+        <div class="column is-three-quarters">
+         <strong>{{item.title}} </strong>  | <span class="has-text-grey">{{item.company}}</span>
+        </div>
+        <div class="column is-one-quarters">
+          {{item.date}}
+        </div>
+      </div>
+        
+      {% endfor %}
+  </div>
+</section>
+<!-- Volunteer -->

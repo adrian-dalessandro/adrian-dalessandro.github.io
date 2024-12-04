@@ -20,6 +20,11 @@
     color: #000;
 }
 
+.navbar {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+
 .publication-block {
     .publication-title {
         width: fit-content;
@@ -53,7 +58,7 @@
     .publication-authors {
         .author-me {
             color: #000;
-            font-weight: 600;
+            text-decoration: underline;
         }
 
         a {
@@ -103,3 +108,132 @@
         margin-top: 0.5em !important;
     }
 }
+
+/* General Layout */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* Resume Header */
+  .resume-header {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Photo and text */
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+  
+    .photo img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    .info {
+      h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #333;
+      }
+  
+      h2 {
+        margin: 0.5rem 0;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #777;
+      }
+  
+      p {
+        margin-top: 1rem;
+        line-height: 1.6;
+        font-size: 1rem;
+        color: #555;
+      }
+    }
+  }
+  
+  /* Section Titles */
+  .resume-section h3 {
+    font-size: 1.75rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* List Items */
+  .resume-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  
+    li {
+      margin-bottom: 1.5rem;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1rem;
+  
+      h4 {
+        margin: 0;
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #444;
+      }
+  
+      .meta {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #777;
+      }
+  
+      p {
+        margin: 0.5rem 0 0;
+        line-height: 1.5;
+        font-size: 1rem;
+        color: #555;
+      }
+    }
+  }
+
+  .section.shrink-gap {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .no-wrap {
+    white-space: nowrap;
+  }
+
+  .image.is-256x256 img {
+    width: 256px;
+    height: 256px;
+    object-fit: contain; /* Ensures the image scales correctly within the dimensions */
+  }
+  
+  /* Skills Section */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  
+    .skill-item {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1rem;
+      color: #444;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  
+      &:hover {
+        background-color: #f0f0f0;
+      }
+    }
+  }

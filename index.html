@@ -1,28 +1,8 @@
 ---
-layout: null
+layout: default
+title: introduction
+description: My publications
 ---
-<!DOCTYPE html>
-<html lang="en-US">
-
-<head>
-  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <title>{{ site.name }}</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="{{ '/css/fontawesome.all.min.css' | relative_url }}" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
-  <link href="{{ '/css/bulma.min.css' | relative_url }}" rel="stylesheet">
-  <link href="{{ '/css/index.css' | relative_url }}" rel="stylesheet">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script defer src="{{ '/js/fontawesome.all.min.js' | relative_url }}"></script>
-  <script src="{{ '/js/index.js' | relative_url }}"></script>
-</head>
-
-<body>
 
   <section class="hero">
     <div class="hero-body container is-max-desktop">
@@ -35,9 +15,12 @@ layout: null
         </div>
 
         <div class="column">
-          <h1 class="title">
-            <b>Hello, I'm {{ site.name }}</b>
+          <h1 class="title is-3">
+            <b>{{ site.name }}</b>
           </h1>
+          <h4 class="subtitle is-5">
+           {{ site.position }}
+          </h4>
           <div class="content has-text-justified">
             {{ site.description | markdownify }}
             <div class="buttons">
@@ -70,26 +53,9 @@ layout: null
     </div>
   </section>
 
-  <!-- News. -->
-  <div class="hr">
-    <div class="container">
-      <hr>
-    </div>
-  </div>
 
   <section class="section">
     <div class="container is-max-desktop">
-
-      <!--<h2 class="title is-3">News</h2>
-      <div class="content">
-        <ul>
-          {% for news in site.data.news %}
-          <li>
-            <b>{{ news.date }}</b>: {{ news.description | markdownify | remove: '<p>' | remove: '</p>' }}
-          </li>
-          {% endfor %}
-        </ul>
-      </div>-->
 
       <h2 class="title is-3">Publications</h2>
 
@@ -126,7 +92,7 @@ layout: null
               {% endfor %}
             </div>
             <div class="publication-venue">
-              <span>{{ publication.venue }}</span>
+              <span>{{ publication.venue }} {{ publication.year }}</span>
               {% for award in publication.awards %}
                 <span class="publication-venue-emph">{{ award }}<span>
               {% endfor %}
@@ -174,34 +140,3 @@ layout: null
   </section>
 
 
-  <footer class="footer">
-    <div class="container">
-      <div class="content footer-links has-text-centered">
-        <a href="mailto:{{ site.email }}">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a class="external-link" href="https://github.com/{{ site.github_username }}">
-          <i class="fab fa-github"></i>
-        </a>
-        <a class="external-link" href="https://scholar.google.com/citations?user={{ site.google_scholar }}">
-          <i class="ai ai-google-scholar"></i>
-        </a>
-        <a class="external-link" href="https://bsky.app/profile/{{ site.bsky_username }}">
-          <i class="fab fa-bluesky"></i>
-        </a>
-      </div>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-8">
-          <div class="content">
-            <p>
-              Feel free to <a href="https://github.com/keunhong/keunhong.github.io">borrow this template</a>.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-</body>
-
-</html>
