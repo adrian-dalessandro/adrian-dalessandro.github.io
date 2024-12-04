@@ -1,5 +1,12 @@
 body { font-family: "Noto Sans", sans-serif; }
 
+/* Style for the custom list markers */
+.custom-list { list-style-type: none; /* Remove default markers */ padding-left: 1em; /* Add padding for custom markers */ }
+
+.custom-list li { position: relative; /* Allows positioning the marker */ margin-bottom: 0.1em; }
+
+.custom-list li::before { content: "-"; /* Unicode character for the marker */ font-weight: bold; /* Make the marker bold */ position: absolute; /* Position the marker */ left: -1em; /* Adjust position to the left of the text */ }
+
 .title { font-family: 'Google Sans'; font-weight: 700; }
 
 .portrait { border-radius: 2%; overflow: hidden; }
@@ -45,7 +52,7 @@ body { font-family: "Noto Sans", sans-serif; }
 .resume-section ul li .meta { font-size: 0.9rem; font-weight: 600; color: #777; }
 .resume-section ul li p { margin: 0.5rem 0 0; line-height: 1.5; font-size: 1rem; color: #555; }
 
-.section.shrink-gap { padding-top: 1rem; padding-bottom: 1rem; }
+.section.shrink-gap { padding-top: 0.5rem; padding-bottom: 0.5rem; }
 
 .no-wrap { white-space: nowrap; }
 

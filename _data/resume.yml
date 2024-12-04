@@ -5,6 +5,24 @@ summary: >
   A passionate developer with a knack for building scalable, performant systems. Always curious about cutting-edge technologies.
 
 sections:
+  - name: Volunteer
+    items:
+      - title: Board of Directors Member
+        company: Simon Fraser Public Interest Group
+        date: 2018 - 2021
+        description: 
+          - Responsible for governance, visioning, hiring, and fiscal management for a community research focused non-profit
+          - Led hiring committees and staff appraisal processes
+
+      - title: Board of Directors Member
+        company: Guelph Ontario Public Interest Group
+        date: 2015 - 2017
+        description: 
+          - Responsible for governance, visioning, hiring, and fiscal management for a community research focused non-profit
+          - Supported the development of an annual public research symposium that saw 60 speakers and hundreds of attendees over a 3 day weekend
+
+
+      
   - name: Education
     items:
       - degree: PhD
@@ -26,22 +44,38 @@ sections:
     items:
       - title: Computer Vision Researcher
         company: Terramera x SFU
-        date: 2020 - 2023
-        description: >
-          A research collaboration focused on combiing computer vision with plant agriculture problems. Focused on challenging problems such as yield forecasting and growth forecasting using images.
+        date: 2020 - 2022
+        description: 
+          - Plant growth modeling & forecasting using deep learning and computer vision
+          - Quantified changes in plant morphology over time, which included the use of GANs, as well as probabilistic models for nastic and tropic plant movement
+
       - title: Computer Vision Researcher
         company: Ecoation x SFU
-        date: 2017 - 2019
-        description: >
-          A research collaboration focused on combiing computer vision with plant agriculture problems. Focused on challenging problems such as yield forecasting and growth forecasting using images.
+        date: 2018 - 2019
+        description:
+          - Worked on fruit detection and tracking problems under field conditions
+          - Consulted directly with growers to identify opportunities for automation
+          - Developed and reported on strategies for forecasting tomato yields, including strategies for replacing manual labour involved in yield forecasting
+
       - title: Undergraduate Research Assistant  
         company: Luiza Antonie Research Lab, University of Guelph
-        date: 2017 - 2019
-        description: >
-          A research collaboration focused on combiing computer vision with plant agriculture problems. Focused on challenging problems such as yield forecasting and growth forecasting using images.
+        date: 2017
+        description:
+          - Started a project involving the development of a surname similarity metric which could be used to link records with transcription errors in Canadian historical census data
+          - This work was continued by a collaborated who published it as a conference paper in CCAI
+
       - title: Software Development Intern 
         company: Advanced Energy Centre @ MaRS Discovery District
-        date: 2017 - 2019
-        description: >
-          A research collaboration focused on combiing computer vision with plant agriculture problems. Focused on challenging problems such as yield forecasting and growth forecasting using images.
+        date: 2016
+        description:
+          - Developed preliminary infrastructure for a vertical search API capable of curating information relevant to trade ministers interested in Canadian renewable energy startups
+          - Utilized several popular techniques for indexing documents such as TF-IDF, and LSA
+      - title: Database Assistant
+        company: UofG x Ontario Ministry of Agriculture, Food and Rural Affairs
+        date: 2015
+        description:
+          - Supported a joint database project between UofG and OMAFRA by updating the archives of an application system for agriculture-related research funding
+          - Developed a tool that updated archived documents to comply with AODA and WCAG
+
+
       

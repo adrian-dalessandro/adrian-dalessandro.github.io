@@ -48,6 +48,7 @@ title: Resume
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -61,7 +62,7 @@ title: Resume
       {% for item in education_section.first.items %}
       <div class="columns is-gapless">
         <div class="column is-three-quarters">
-         <strong>{{item.degree}} {{item.type}} </strong>  | <span class="has-text-grey no-wrap">{{item.institution}}</span>
+          <span class="has-background-light"><strong>{{item.degree}} {{item.type}} </strong> </span> | <span class="has-text-grey no-wrap"><small>{{item.institution}}</small></span>
         </div>
         <div class="column is-one-quarters">
           {{item.date}}
@@ -112,7 +113,13 @@ title: Resume
       {% for item in work_section.first.items %}
       <div class="columns is-gapless">
         <div class="column is-three-quarters">
-         <strong>{{item.title}} </strong>  | <span class="has-text-grey">{{item.company}}</span>
+          <span class="has-background-light"><strong>{{item.title}} </strong></span>  | <span class="has-text-grey"><small>{{item.company}}</small></span>
+            <ul class="custom-list">
+            {% for point in item.description %}
+            <small><li>{{ point }}</li></small>
+            {% endfor %}
+          </ul>
+
         </div>
         <div class="column is-one-quarters">
           {{item.date}}
@@ -123,3 +130,28 @@ title: Resume
   </div>
 </section>
 <!-- Volunteer -->
+
+<section class="section shrink-gap">
+  <div class="container">
+    <h2 class="title">Board Experience</h2>
+    <div class="box">
+      {% assign work_section = site.data.resume.sections | where: "name", "Volunteer" %}
+      {% for item in work_section.first.items %}
+      <div class="columns is-gapless">
+        <div class="column is-three-quarters">
+          <span class="has-background-light"><strong>{{item.title}} </strong></span>  | <span class="has-text-grey"><small>{{item.company}}</small></span>
+            <ul class="custom-list">
+            {% for point in item.description %}
+            <small><li>{{ point }}</li></small>
+            {% endfor %}
+          </ul>
+
+        </div>
+        <div class="column is-one-quarters">
+          {{item.date}}
+        </div>
+      </div>
+        
+      {% endfor %}
+  </div>
+</section>
