@@ -9,6 +9,13 @@ permalink: /datasets/
         {% if site.data.datasets.size > 0 %}
           {% for dataset in site.data.datasets %}
           <div class="publication-block columns">
+            <div class="column is-2">
+              <div class="publication-image {% if publication.image_mouseover %}publication-mousecell{% endif %}">
+                <img alt="{{ publication.title }}" src="./images/{{ publication.image }}" />
+              </div>
+            </div>
+
+
             <div class="column">
               <div class="content">
                 <h3 class="publication-title">{{ dataset.title }}</h3>
