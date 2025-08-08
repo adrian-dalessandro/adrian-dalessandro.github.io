@@ -1,6 +1,7 @@
 - id: lookalikes
   title: "LookAlikes"
   task: "Fine-Grained Object Counting"
+  image: "lookalikes.png"
   size: 1037
   year: 2025
   status: "Pre-Release"
