@@ -1,3 +1,16 @@
+- id: fgcount
+  title: "Just Say the Word: Annotation-Free Fine-Grained Object Counting"
+  venue: arxiv
+  year: 2025
+  description: "Moving beyond inference-time conditioning for fine-grained object counting by prompt tuning using synthetic data."
+  arxiv: 2504.11705
+  image: lwn2c_demo.png
+  type: paper
+  authors:
+    - adrian
+    - ali
+    - ghassan
+
 - id: afreeca
   title: "AFreeCA: Annotation-Free Counting for All"
   venue: ECCV
