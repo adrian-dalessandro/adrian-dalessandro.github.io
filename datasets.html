@@ -6,6 +6,22 @@ permalink: /datasets/
 <section class="section">
     <div class="container is-max-desktop">
         <h2 class="title is-3">Datasets</h2>
+        {% if site.data.datasets.size > 0 %}
+          {% for dataset in site.data.datasets %}
+          <div class="publication-block columns">
+            <div class="column">
+              <div class="content">
+                <h3 class="publication-title">{{ dataset.title }}</h3>
+                <p><strong>Task:</strong> {{ dataset.task }}</p>
+                <p><strong>Size:</strong> {{ dataset.size }} images</p>
+                <p><strong>Year:</strong> {{ dataset.year }}</p>
+                <p><strong>Status:</strong> {{ dataset.status }}</p>
+                <p class="publication-description">{{ dataset.description }}</p>
+              </div>  
+            </div>   
+          </div>
+          {% endfor %}
+        {% else %}
         <div class="has-text-centered">
           <p class="subtitle">The page you are looking for is under construction.</p>
           <figure class="image is-inline-block is-256x256">
@@ -13,4 +29,6 @@ permalink: /datasets/
           </figure>
           <p class="has-text-grey-light">Check back soon!</p>
         </div>
+      {% endif %}
+    </div>
 </section>

@@ -1,0 +1,7 @@
+- id: lookalikes
+  title: "LookAlikes"
+  task: "Fine-Grained Object Counting"
+  size: 1037
+  year: 2025
+  status: "Pre-Release"
+  description: "Counting specific objects when there are multiple visually similar objects in the scene is a challenging task. LookAlikes contains 8 broad categories and 27 fine-grained categories and is designed to benchmark fine-grained object counting."
