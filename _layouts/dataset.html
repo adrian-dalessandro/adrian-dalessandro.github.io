@@ -4,27 +4,24 @@ layout: default
 <main class="dataset-page">
   {% assign hero = page.splash | default: page.image %}
 
-  <section class="hero dataset-hero">
-    {% if hero %}
-      <img class="dataset-hero__img" src="{{ hero | relative_url }}" alt="{{ page.title | escape }}">
-    {% endif %}
-    <div class="hero-body dataset-hero__body">
-      <div class="container is-max-desktop">
-        <h1 class="title is-2">{{ page.title }}</h1>
-        <div class="meta-pills">
-          {% if page.year %}
-            <span class="pill"><i class="far fa-calendar"></i>{{ page.year }}</span>
-          {% endif %}
-          {% if page.authors %}
-            <span class="pill"><i class="far fa-user"></i>{{ page.authors }}</span>
-          {% endif %}
-          {% if page.task %}
-            <span class="pill"><i class="fas fa-layer-group"></i>{{ page.task }}</span>
-          {% endif %}
-          </div>
+<section
+  class="hero is-medium dataset-hero is-link has-background"
+  style="--hero-img:url('{{ (page.splash | default: page.image) | relative_url }}')">
+  <div class="hero-body"></div>
+  <!-- add these helper classes ↓↓↓ -->
+  <div class="hero-foot is-flex is-align-items-flex-end">
+    <div class="container is-max-desktop has-text-white">
+      <h1 class="title is-size-1-desktop is-size-3-tablet is-size-3-mobile">{{ page.title }}</h1>
+
+      <div class="meta-pills is-align-content-end">
+        {% if page.year %}<span class="pill is-size-7-mobile"><i class="far fa-calendar"></i>{{ page.year }}</span>{% endif %}
+        {% if page.authors %}<span class="pill is-size-7-mobile"><i class="far fa-user"></i>{{ page.authors }}</span>{% endif %}
+        {% if page.task %}<span class="pill is-size-7-mobile"><i class="fas fa-layer-group"></i>{{ page.task }}</span>{% endif %}
       </div>
     </div>
-  </section>
+  </div>
+</section>
+  
 
   <section class="section">
     <div class="container content is-max-desktop">
@@ -32,3 +29,4 @@ layout: default
     </div>
   </section>
 </main>
+

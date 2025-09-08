@@ -2,42 +2,30 @@
 ---
 
 @import "base";
+/* Use Bulma hero, just add a background + gentle fade */
+.dataset-hero.has-background {
+  background: var(--hero-img) center/cover no-repeat;
+  position: relative; color: #fff;
+}
+.dataset-hero.has-background::after{
+  content:""; position:absolute; inset:0; z-index:0;
+  background: linear-gradient(to top, rgba(0,0,0,.99), rgba(0,0,0,0));
+}
+.dataset-hero .hero-foot{ position:relative; z-index:1; padding-bottom:1rem; }
 
-/* Dataset page only */
-.dataset-page {
-  /* control hero height with a single var */
 
 
-  .dataset-hero {
-    position: relative;
-    overflow: hidden;
-  }
-
-.dataset-hero__img {
-  width: 100%;     /* scale responsively */
-  height: auto;    /* keep the image’s natural aspect ratio */
-  display: block;  /* remove inline-gap */
-  object-fit: unset; /* or simply remove this line */
-  opacity: 1;      /* optional: no dimming */
+/* pills you already use */
+.dataset-page .meta-pills { gap:.5rem; margin-top:.5rem; }
+.dataset-page .pill {
+  display:inline-flex; align-items:center; gap:.45rem;
+  padding:.45rem .85rem; border-radius:9999px;
+  background:#333; color:#fff; line-height:1; font-size:.9rem;
+  box-shadow:0 1px 4px rgba(0,0,0,.08);
 }
 
-  .dataset-hero__body {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: flex-end;      /* title sits near bottom */
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.99), rgba(0,0,0,0));
-    padding-bottom: .75rem;     /* space under title */
-    color: #fff;
 
-    .title, .subtitle { color: #fff; margin: 0; }
-    .subtitle { opacity: .9; }
-  }
 
-  @media (min-width: 768px) {
-    .dataset-hero__img { height: var(--dataset-hero-h-lg); }
-  }
-}
 
 /* dataset page only */
 .dataset-page .meta-pills{
