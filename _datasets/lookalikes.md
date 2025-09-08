@@ -6,7 +6,7 @@ authors: "Adriano D'Alessandro et al."
 task: "Fine-Grained Object Counting"
 splash: "/images/lookalikes_hero.png"   # or `image:` if you prefer
 download_url: "https://drive.google.com/drive/folders/1Dz3GRStKq-DL_eX1w7Eo0rscLSN7h5sG?usp=drive_link"
-image: "/images/lookalikes.png"
+image: "/images/lookalikes_share.png"
 description: "LookAlikes is a fine-grained object-counting dataset for evaluating the generalization of class-agnostic counting methods. Each image contains visually similar objects, from which only a subcategory must be counted. It ships with our paper Just Say the Word: Annotation-Free Fine-Grained Object Counting"
 download_label: "LOOKALIKES"
 download_note: "(3.4 GB)"
