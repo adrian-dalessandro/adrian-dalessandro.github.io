@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Adriano D'Alessandro</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="/css/fontawesome.all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
+  <link href="/css/bulma.min.css" rel="stylesheet">
+  <link href="/css/index.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script defer src="/js/fontawesome.all.min.js"></script>
+  <script src="/js/index.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const navbarBurgers = Array.from(document.querySelectorAll(".navbar-burger"));
+      navbarBurgers.forEach((burger) => {
+        burger.addEventListener("click", () => {
+          const target = document.querySelector(".navbar-menu");
+          burger.classList.toggle("is-active");
+          target.classList.toggle("is-active");
+        });
+      });
+    });
+  </script>
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>LookAlikes Dataset | Adriano D’Alessandro</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="LookAlikes Dataset" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="LookAlikes is a fine-grained object-counting dataset for evaluating the generalization of class-agnostic counting methods. Each image contains visually similar objects, from which only a subcategory must be counted. It ships with our paper Just Say the Word: Annotation-Free Fine-Grained Object Counting" />
+<meta property="og:description" content="LookAlikes is a fine-grained object-counting dataset for evaluating the generalization of class-agnostic counting methods. Each image contains visually similar objects, from which only a subcategory must be counted. It ships with our paper Just Say the Word: Annotation-Free Fine-Grained Object Counting" />
+<link rel="canonical" href="http://localhost:4000/datasets/lookalikes/" />
+<meta property="og:url" content="http://localhost:4000/datasets/lookalikes/" />
+<meta property="og:site_name" content="Adriano D’Alessandro" />
+<meta property="og:image" content="http://localhost:4000/images/lookalikes.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-09-08T11:39:27-07:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/images/lookalikes.png" />
+<meta property="twitter:title" content="LookAlikes Dataset" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-09-08T11:39:27-07:00","datePublished":"2025-09-08T11:39:27-07:00","description":"LookAlikes is a fine-grained object-counting dataset for evaluating the generalization of class-agnostic counting methods. Each image contains visually similar objects, from which only a subcategory must be counted. It ships with our paper Just Say the Word: Annotation-Free Fine-Grained Object Counting","headline":"LookAlikes Dataset","image":"http://localhost:4000/images/lookalikes.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/datasets/lookalikes/"},"url":"http://localhost:4000/datasets/lookalikes/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+  
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="/">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+          <span>Home</span>
+        </a>
+        <a class="navbar-item" href="/resume.html">
+          <span class="icon">
+            <i class="fas fa-file-alt"></i>
+          </span>
+          <span>Resume</span>
+        </a>
+        <a class="navbar-item" href="/blog/">
+          <span class="icon"><i class="fas fa-pencil-alt"></i></span>
+          <span>Blog</span>
+        </a>
+        <a class="navbar-item" href="/datasets/">
+          <span class="icon"><i class="fas fa-database"></i>
+          </span>
+          <span>Datasets</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+<!-- End nav bar -->
+<main>
+    <main class="dataset-page">
+  
+
+  <section class="hero dataset-hero">
+    
+      <img class="dataset-hero__img" src="/images/lookalikes_hero.png" alt="LookAlikes Dataset">
+    
+    <div class="hero-body dataset-hero__body">
+      <div class="container is-max-desktop">
+        <h1 class="title is-2">LookAlikes Dataset</h1>
+        <div class="meta-pills">
+          
+            <span class="pill"><i class="far fa-calendar"></i>2025</span>
+          
+          
+            <span class="pill"><i class="far fa-user"></i>Adriano D'Alessandro et al.</span>
+          
+          
+            <span class="pill"><i class="fas fa-layer-group"></i>Fine-Grained Object Counting</span>
+          
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container content is-max-desktop">
+      <h1 id="overview">Overview</h1>
+<p><strong>LOOKALIKES</strong> is a fine-grained object-counting dataset that ships with our paper
+<a href="https://arxiv.org/abs/2504.11705"><strong>Just Say the Word: Annotation-Free Fine-Grained Object Counting</strong></a> — D’Alessandro, Mahdavi-Amiri, Hamarneh (2025).</p>
+
+<p>What it’s for: stress-testing <strong>text-specified, class-agnostic counting</strong> models (i.e., zero-shot / prompt-shot / open-world, or whatever we’re calling it these days). The dataset is <strong>test-only</strong> and deliberately tricky: most images contain <strong>multiple visually similar sibling sub-categories</strong> (e.g., jalapeño vs. habanero, penne vs. gnocchi), and the task is to <strong>count only the instances of the requested sub-category</strong> given a text prompt.</p>
+
+<p>If you’ve got a pre-trained counter, this is a drop-in benchmark for measuring <strong>generalization under fine-grained confusion</strong>. Run your model with a sub-category prompt, report per-class counts, and let us know how it holds up.</p>
+
+<p>(P.S. don’t forget to cite our work!)</p>
+
+<hr />
+
+<h2 id="1-download">1) Download</h2>
+
+<p>The dataset can be directly downloaded from the following link:</p>
+
+<div class="dataset-download">
+    <a class="dl-btn" href="https://drive.google.com/drive/folders/1Dz3GRStKq-DL_eX1w7Eo0rscLSN7h5sG?usp=drive_link" target="_blank" rel="noopener">
+    <i class="fas fa-download" aria-hidden="true"></i>
+    <span>LOOKALIKES <span class="dl-note">(3.4 GB)</span></span>
+    </a>
+</div>
+
+<h2 id="2-whats-inside">2) What’s inside</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Data-LookAlikes/
+├── &lt;Broad-Category&gt;/                         
+│   ├── images/
+│   │   ├── &lt;fname&gt;                 # JPG/PNG
+│   │   └── ...
+│   └── ...
+├── annotations.all.testset         # all labels
+├── usage_example.ipynb             # a demo for loading images
+├── LICENSE.md
+└── README.md
+</code></pre></div></div>
+
+<p><strong>Dataset stats</strong></p>
+
+<ul>
+  <li><strong>Images:</strong> 1,037</li>
+  <li><strong>Domains:</strong> peppers, apples, pasta, potatoes, tomatoes, waterfowl, wildflowers, gemstone finishes</li>
+  <li><strong>Sub-categories:</strong> 27</li>
+  <li><strong>Annotation type:</strong> point labels per instance (+ per-subcategory counts)</li>
+  <li><strong>Avg density:</strong> 36.4 objs/img (max 656)</li>
+  <li><strong>Multi-class:</strong> 83% of images contain ≥2 sibling sub-categories</li>
+</ul>
+
+<hr />
+
+<h2 id="3-annotation-schema">3) Annotation schema</h2>
+
+<p><code class="language-plaintext highlighter-rouge">annotations.all.testset.json</code>:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"&lt;broad-category&gt;"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"sub_categories"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"&lt;sub-cat&gt;"</span><span class="p">,</span><span class="w"> </span><span class="err">...</span><span class="p">],</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="nl">"image"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nl">"fname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;fname&gt;"</span><span class="p">,</span><span class="w"> </span><span class="nl">"width"</span><span class="p">:</span><span class="w"> </span><span class="s2">"W"</span><span class="p">,</span><span class="w"> </span><span class="nl">"height"</span><span class="p">:</span><span class="w"> </span><span class="s2">"H"</span><span class="p">},</span><span class="w">
+         </span><span class="nl">"annotations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nl">"&lt;sub-cat&gt;"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nl">"point"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="err">x</span><span class="p">,</span><span class="w"> </span><span class="err">y</span><span class="p">]},</span><span class="w"> </span><span class="err">...</span><span class="p">],</span><span class="w"> </span><span class="err">...</span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="err">...</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<hr />
+
+<h2 id="4-evaluation-protocol">4) Evaluation protocol</h2>
+
+<p><strong>Task:</strong> predict the <strong>count for each sub-category present</strong> in an image.
+<strong>Primary metrics:</strong> In our paper, we calculate MAE / RMSE per sub-category and macro-averaged across all.</p>
+
+<p>There are helper functions in <code class="language-plaintext highlighter-rouge">usage_example.ipynb</code> that can be used for macro-averaging as follows:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="n">annotations</span> <span class="o">=</span> <span class="n">json</span><span class="p">.</span><span class="n">load</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s">"./annotations.all.testset.json"</span><span class="p">))</span>
+<span class="n">mae_across_splits</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">broad_cat</span><span class="p">,</span> <span class="n">sub_cat</span> <span class="ow">in</span>  <span class="n">get_subcategory_keys</span><span class="p">(</span><span class="n">annotations</span><span class="p">):</span>
+    <span class="n">subcat_split</span> <span class="o">=</span> <span class="n">get_subcategory_split</span><span class="p">(</span><span class="n">annotations</span><span class="p">,</span> <span class="n">broad_cat</span><span class="p">,</span> <span class="n">sub_cat</span><span class="p">)</span>
+    <span class="n">per_example_subcat_mae</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">example</span> <span class="ow">in</span> <span class="n">sub_cat_split</span><span class="p">:</span>
+        <span class="c1"># calculate MAE
+</span>        <span class="n">mae</span> <span class="o">=</span> <span class="bp">None</span> <span class="c1"># add your logic
+</span>        <span class="n">per_example_subcat_mae</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">mae</span><span class="p">)</span>
+    <span class="c1"># calculate mae for sub_cat
+</span>    <span class="n">mae_across_splits</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">mean</span><span class="p">(</span><span class="n">per_example_subcat_mae</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">mean</span><span class="p">(</span><span class="n">mae_across_splits</span><span class="p">))</span>
+
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="5-license-summary">5) License (summary)</h2>
+
+<ul>
+  <li><strong>Images:</strong> original creators’ licenses (Flickr/Unsplash/Pexels/…); see metadata.</li>
+  <li>
+    <p><strong>Annotations:</strong> custom <strong>research &amp; individual use</strong> license.</p>
+
+    <ul>
+      <li>✅ Academic &amp; personal use</li>
+      <li>❌ Corporate, commercial, governmental, policing, military, surveillance uses</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Full text: see <code class="language-plaintext highlighter-rouge">LICENSE.md</code>.</p>
+
+<hr />
+
+<h2 id="6-citation">6) Citation</h2>
+
+<div class="language-bibtex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">@article</span><span class="p">{</span><span class="nl">dalessandro2025justsaytheword</span><span class="p">,</span>
+  <span class="na">title</span>   <span class="p">=</span> <span class="s">{Just Say the Word: Annotation-Free Fine-Grained Object Counting}</span><span class="p">,</span>
+  <span class="na">author</span>  <span class="p">=</span> <span class="s">{D'Alessandro, Adrian and Mahdavi-Amiri, Ali and Hamarneh, Ghassan}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2504.11705}</span><span class="p">,</span>
+  <span class="na">year</span>    <span class="p">=</span> <span class="s">{2025}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+
+    </div>
+  </section>
+</main>
+
+</main>
+<!-- Start footer section -->
+<footer class="footer">
+    <div class="container">
+      <div class="content footer-links has-text-centered">
+        <a href="mailto:adrian.c.dalessandro@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a class="external-link" href="https://github.com/adrian-dalessandro">
+          <i class="fab fa-github"></i>
+        </a>
+        <a class="external-link" href="https://scholar.google.com/citations?user=FvPiYsEAAAAJ">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+        <a class="external-link" href="https://bsky.app/profile/adrian-dalessandro.bsky.social">
+          <i class="fab fa-bluesky"></i>
+        </a>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              Adapted from <a href="https://github.com/keunhong/keunhong.github.io">this template</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

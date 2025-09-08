@@ -2,7 +2,9 @@
   title: "LookAlikes"
   task: "Fine-Grained Object Counting"
   image: "lookalikes.png"
+  url: "lookalikes"
   size: 1037
   year: 2025
-  status: "Pre-Release"
+  status: "Released"
+  path: "/datasets/lookalikes"
   description: "Counting specific objects when there are multiple visually similar objects in the scene is a challenging task. LookAlikes contains 8 broad categories and 27 fine-grained categories and is designed to benchmark fine-grained object counting. The dataset will be released upon acceptance of the associated paper. If you would like access in the meantime, please send an email."

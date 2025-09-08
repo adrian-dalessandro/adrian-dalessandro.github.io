@@ -1,0 +1,13 @@
+{% assign href  = include.url | default: page.download_url %}
+{% assign label = include.label | default: page.download_label | default: "Download Dataset" %}
+{% assign note  = include.note  | default: page.download_note %}
+{% if page.download_url %}
+{% assign dl = page.download_url %}
+{% if dl contains '://' %}{% assign href = dl %}{% else %}{% assign href = dl | relative_url %}{% endif %}
+<div class="dataset-download">
+    <a class="dl-btn" href="{{ href }}" target="_blank" rel="noopener">
+    <i class="fas fa-download" aria-hidden="true"></i>
+    <span>{{ page.download_label | default: "Download Dataset" }} {% if page.download_note %}<span class="dl-note">{{ page.download_note }}</span>{% endif %}</span>
+    </a>
+</div>
+{% endif %}
