@@ -1,19 +1,23 @@
 ---
 layout: dataset
-title: "LookAlikes Dataset"
+title: "LookAlikes Dataset v2"
 year: 2025
 authors: "Adriano D'Alessandro et al."
 task: "Fine-Grained Object Counting"
 splash: "/images/lookalikes_hero.png"   # or `image:` if you prefer
 download_url: "https://drive.google.com/drive/folders/1Dz3GRStKq-DL_eX1w7Eo0rscLSN7h5sG?usp=drive_link"
 image: "/images/lookalikes_share.png"
-description: "LookAlikes is a fine-grained object-counting dataset for evaluating the generalization of class-agnostic counting methods. Each image contains visually similar objects, from which only a subcategory must be counted. It ships with our paper Just Say the Word: Annotation-Free Fine-Grained Object Counting"
+description: "LookAlikes is a fine-grained object-counting dataset for evaluating the generalization of class-agnostic counting methods. Each image contains visually similar objects, from which only a subcategory must be counted. It ships with our paper FiGO: Fine-Grained Object Counting without Annotations"
 download_label: "LOOKALIKES"
 download_note: "(3.4 GB)"
 ---
+
+> [!NOTE]
+> The dataset link is currently offline as I upload v2 of the LookAlikes dataset. This is the dataset used to evaluate methods in our FiGO paper.
+
 # Overview
 **LOOKALIKES** is a fine-grained object-counting dataset that ships with our paper
-[**Just Say the Word: Annotation-Free Fine-Grained Object Counting**](https://arxiv.org/abs/2504.11705) — D’Alessandro, Mahdavi-Amiri, Hamarneh (2025).
+[**FiGO: Fine-Grained Object Counting without Annotations**](https://arxiv.org/abs/2504.11705) — D’Alessandro, Mahdavi-Amiri, Hamarneh (2025).
 
 What it’s for: stress-testing **text-specified, class-agnostic counting** models (i.e., zero-shot / prompt-shot / open-world, or whatever we're calling it these days). The dataset is **test-only** and deliberately tricky: most images contain **multiple visually similar sibling sub-categories** (e.g., jalapeño vs. habanero, penne vs. gnocchi), and the task is to **count only the instances of the requested sub-category** given a text prompt.
 
@@ -48,9 +52,9 @@ Data-LookAlikes/
 
 **Dataset stats**
 
-* **Images:** 1,037
-* **Domains:** peppers, apples, pasta, potatoes, tomatoes, waterfowl, wildflowers, gemstone finishes
-* **Sub-categories:** 27
+* **Images:** 1,190
+* **Domains:** peppers, apples, pasta, potatoes, tomatoes, waterfowl, wildflowers, etc.
+* **Sub-categories:** 37
 * **Annotation type:** point labels per instance (+ per-subcategory counts)
 * **Avg density:** 36.4 objs/img (max 656)
 * **Multi-class:** 83% of images contain ≥2 sibling sub-categories
@@ -120,7 +124,7 @@ Full text: see `LICENSE.md`.
 
 ```bibtex
 @article{dalessandro2025justsaytheword,
-  title   = {Just Say the Word: Annotation-Free Fine-Grained Object Counting},
+  title   = {FiGO: Fine-Grained Object Counting without Annotations},
   author  = {D'Alessandro, Adrian and Mahdavi-Amiri, Ali and Hamarneh, Ghassan},
   journal = {arXiv preprint arXiv:2504.11705},
   year    = {2025}
