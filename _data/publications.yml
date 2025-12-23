@@ -1,5 +1,5 @@
 - id: fgcount
-  title: "Just Say the Word: Annotation-Free Fine-Grained Object Counting"
+  title: "FiGO: Fine-Grained Object Counting without Annotations"
   venue: arxiv
   year: 2025
   description: "Moving beyond inference-time conditioning for fine-grained object counting by prompt tuning using synthetic data."
