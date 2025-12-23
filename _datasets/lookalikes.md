@@ -11,9 +11,9 @@ description: "LookAlikes is a fine-grained object-counting dataset for evaluatin
 download_label: "LOOKALIKES"
 download_note: "(3.4 GB)"
 ---
-
-> [!NOTE]
-> The dataset link is currently offline as I upload v2 of the LookAlikes dataset. This is the dataset used to evaluate methods in our FiGO paper.
+<div style="background-color: #fff3cd; color: #856404; padding: 10px; border: 1px solid #ffeeba;">
+  <strong>NOTE:</strong> The dataset link is currently offline as I upload the new v2 of the LookAlikes dataset. This is the dataset used to evaluate methods in our FiGO paper.
+</div>
 
 # Overview
 **LOOKALIKES** is a fine-grained object-counting dataset that ships with our paper
